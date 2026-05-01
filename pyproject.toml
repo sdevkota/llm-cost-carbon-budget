@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-cost-carbon-budget"
+version = "2.0.0"
+description = "Budgets for token spend, latency, and estimated energy impact."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "LLM Cost Carbon Budget contributors" }]
+keywords = ["ai", "agents", "governance", "safety", "open-source"]
+
+[project.scripts]
+"llm-cost-carbon-budget" = "llm_cost_carbon_budget.cli:main"
+
+[project.urls]
+Homepage = "https://sdevkota.github.io/llm-cost-carbon-budget/"
+Repository = "https://github.com/sdevkota/llm-cost-carbon-budget"
+Issues = "https://github.com/sdevkota/llm-cost-carbon-budget/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
